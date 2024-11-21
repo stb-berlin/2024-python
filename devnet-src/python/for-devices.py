@@ -1,4 +1,4 @@
-devices = ["R1","R2","R3","S1","S2"]
+devices = ["R1","R2","R3","S1","S2", "L3S1"]
 switches = []
 routers = []
 for item in devices:
@@ -10,4 +10,4 @@ for item in devices:
         print(item)
 
 print(f"my switches are: {switches}")
-print(f"my switches are: {routers}")
+print(f"my routers are: {routers}")
