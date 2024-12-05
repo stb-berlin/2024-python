@@ -1,3 +1,5 @@
+#! /usr/bin/env python3
+
 devices = []
 while True:
     new_item = input("Enter device name or type 'exit' to quit: ")
