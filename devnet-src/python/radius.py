@@ -1,16 +1,21 @@
 #! /usr/bin/python3
 
-def circumference(radius):
-    pi = 3.14159 # (Will hardcode pi in this example)
-    circumferenceValue = pi * radius * 2
-    return circumferenceValue
+class Circle:
+    def __init__(self, radius):
+        self.radius = radius
 
-def printCircumference(radius):
-    myCircumference = circumference(radius)
-    print (f"Circumference of a circle with a radius of {radius} is {myCircumference:.2f}")
+    def circumference(self):
+        pi = 3.14159 # (Will hardcode pi in this example)
+        circumferenceValue = pi * self.radius * 2
+        return circumferenceValue
 
-radius = [2, 5, 7]
+    def printCircumference(self):
+        myCircumference = self.circumference()
+        print (f"Circumference of a circle with a radius of {self.radius}\
+                 is {myCircumference:.2f}")
+
+radius = [Circle(2), Circle(5), Circle(7)]
 # In the below line of code, the value of radius1 (2)
 # is the argument to the printCircumference function
 for r in radius:
-    printCircumference(r)
+    r.printCircumference()
